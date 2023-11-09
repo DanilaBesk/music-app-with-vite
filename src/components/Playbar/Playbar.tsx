@@ -14,7 +14,7 @@ const TimeControls = () => {
   const formattedCurrentTime = secondsToMMSS(currentTime);
   const sliderCurrentTime = Math.round((currentTime / duration) * 10_000);
 
-  const handleChangeCurrentTime = (event: Event, value: number | number[]) => {
+  const handleChangeCurrentTime = (_event: Event, value: number | number[]) => {
     let v: number;
     if (Array.isArray(value)) {
       v = value[0];

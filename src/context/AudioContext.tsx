@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useEffect } from "react";
+import { ReactNode, createContext } from "react";
 import { TrackType } from "../types/Track";
 import { useState } from "react";
 import tracksList from "../assets/tracksList";
