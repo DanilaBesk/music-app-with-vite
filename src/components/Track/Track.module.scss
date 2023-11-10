@@ -18,7 +18,6 @@
 
 .credits {
   flex: 1;
-
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -32,4 +31,19 @@
 
 .playing * {
   color: #9340fe !important;
+}
+@media (max-width: 768px) {
+  .track {
+    gap: 10px;
+    &b,
+    &p {
+      font-size: 13px;
+    }
+  }
+
+  .input {
+    & > * {
+      font-size: 16px;
+    }
+  }
 }

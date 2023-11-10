@@ -1,16 +1,18 @@
 .search {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .input {
-  width: 300px;
-  margin: 10px 150px;
-
+  width: 40vw;
+  margin: 0 auto;
   & > * {
-    text-align: center !important;
+    text-align: center;
     color: #9e9e9e;
     padding: 14px;
-    font-size: 18px !important;
+    font-size: 18px;
   }
 }
 
@@ -31,4 +33,14 @@
   margin: 0 auto;
   text-align: center;
   color: #9340fe;
+}
+@media (max-width: 768px) {
+  .list {
+    gap: 18px;
+  }
+  .input {
+    & > * {
+      font-size: 14px !important;
+    }
+  }
 }
